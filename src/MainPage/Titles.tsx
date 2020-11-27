@@ -4,7 +4,7 @@ import { TableDataRow, TableDataCell, LightLine, LinkRow, DataText } from './app
 
 const seperateBookNumber = (elem) => {
     let out;
-    const doubleNum = elem.split('').slice(-2);
+    const doubleNum = elem.slice(-2);
     out = doubleNum;
     if ( doubleNum.includes('/') ) {
         out = doubleNum.slice(1);

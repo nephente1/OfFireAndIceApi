@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {observer} from 'mobx-react-lite';
 import { Provider, AppState } from './AppState/AppState';
-import { AppRouting } from './MainPage/MainPage';
+import { AppRouting } from './MainPage/AppRouting';
 
 const appStore = new AppState();
 

@@ -59,7 +59,7 @@ export const Header = styled('header')`
     display: flex;
     align-items:  center;
     justify-content: space-around;
-    margin: 0 0 20px 0;
+    margin: 0 0 35px 0;
 `;
 
 export const HeaderTableRow = styled('div')`
@@ -159,6 +159,7 @@ export const DataText = styled('p')<TitleTextPropsType>`
     letter-spacing: 1px;
     color: #d5d5d5;
     text-transform: capitalize;
+    text-decoration: inherit;
 `;
 
 export const LightLine = styled('div')<LightLinePropsType>`
@@ -171,7 +172,7 @@ export const LightLine = styled('div')<LightLinePropsType>`
 `;
 
 export const LinkRow = styled(Link)`
-    text-decoration: none;
+    text-decoration: underline !important;
 `;
 
 export const DetailsPageContainer = styled('div')`
@@ -193,3 +194,25 @@ export const TableDataRow = styled(HeaderTableRow)`
 export const TableDataCell = styled('div')`
     width: calc(100% / 5);
 `;
+
+export const InputsWrapper = styled('div')`
+    display: inline-flex;
+    margin: 0 0 0 15px;
+    &:first-of-type {
+        margin: 0;
+      }
+`;
+
+export const InputsLabel = styled('p')`
+    font-size: 14px;
+    margin: 0 10px 0 0;
+    padding: 0;
+
+`;
+
+export const Select = styled('select')`
+    border-radius: 4px;
+    padding: 3px 0;
+`;
+
+
